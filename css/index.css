@@ -620,9 +620,12 @@ body {
     width: 100%;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--palette-silver);
     cursor: pointer;
     transition: color 0.3s ease;
+}
+
+.accordion__trigger[aria-expanded="false"] {
+    border-bottom: 1px solid var(--palette-silver);
 }
 
 .accordion__trigger:hover .accordion__heading {
@@ -652,14 +655,15 @@ body {
     position: absolute;
     right: 5px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) rotate(90deg);
     width: 1px;
     height: 12px;
     background-color: var(--palette-mirage);
+    transition: transform 0.3s ease;
 }
 
-.accordion__icon:after {
-    transform: translateY(-50%) rotate(90deg);
+.accordion__trigger[aria-expanded="false"] .accordion__icon:after {
+    transform: translateY(-50%);
 }
 
 .accordion__panel {
