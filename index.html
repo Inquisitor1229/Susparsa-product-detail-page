@@ -17,7 +17,7 @@
 </head>
 <body>
 <header class="header">
-  <div class="container header-container">
+  <div class="container header__container">
     <div class="header-top">
       <nav aria-label="Main" class="header-nav nav">
         <a href="#content" class="skip-link visually-hidden">Skip to content</a>
@@ -68,7 +68,7 @@
           <li class="header-nav__item header-nav__item--logo">
             <a href="javascript:void(0)" class="header-nav__link">
               <span class="visually-hidden">home</span>
-              <img src="./img/header/header__logo.svg" alt="home" role="presentation">
+              <img src="./img/header/header__logo.svg" alt="" role="presentation">
             </a>
           </li>
           <li class="header-nav__item header-nav__item--second-list">
@@ -228,7 +228,7 @@
     <div class="container accordion-container">
       <div id="accordionGroup" class="accordion">
         <h3 class="accordion__heading-container">
-          <button type="button" aria-expanded="true" class="accordion__trigger accordion__trigger--active accordion__trigger--first" aria-controls="sect1" id="accordion1id">
+          <button type="button" aria-expanded="true" class="accordion__trigger accordion__trigger--first" aria-controls="sect1" id="accordion1id">
             <span class="accordion__heading">
               Sizing & Fit
               <span class="accordion__icon"></span>
@@ -421,13 +421,23 @@
         <address class="footer__address">Susparsa Store Geneva, Switzerland</address>
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__social-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link"
+            >
               <span class="visually-hidden">Our facebook page</span>
               <img class="footer__social-image" src="img/footer/footer__facebook.svg" alt="" role="presentation">
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__social-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link"
+            >
               <span class="visually-hidden">Our instagram page</span>
               <img class="footer__social-image" src="img/footer/footer__instagram.svg" alt="" role="presentation">
             </a>
@@ -438,27 +448,48 @@
         <h2 class="heading heading--md footer__card-heading">Company</h2>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link"
+            >
               Women
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Men
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Kids
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               About Us
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Our Materials
             </a>
           </li>
@@ -468,27 +499,47 @@
         <h2 class="heading heading--md footer__card-heading">Useful Links</h2>
         <ul class="footer__list">
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Privacy Policy
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Shipping Policy
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Return & Refund Policy
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Terms of Service
             </a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="javascript:void(0)" target="_blank">
+            <a
+                class="footer__list-link"
+                href="javascript:void(0)"
+                target="_blank"
+                aria-describedby="aria_label_external_link">
               Contact Us
             </a>
           </li>
@@ -498,5 +549,8 @@
     <small class="footer__copyright">© Susparsa 2021</small>
   </div>
 </footer>
+
+<span id="aria_label_external_link" class="visually-hidden">Opens in a new window</span>
+
 </body>
 </html>
