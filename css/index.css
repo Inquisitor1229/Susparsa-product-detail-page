@@ -149,6 +149,7 @@ body {
     left: 0;
     right: 0;
     margin: -10px auto 0;
+    max-width: 150px;
 }
 
 .header-nav__item--second-list {
@@ -543,6 +544,7 @@ body {
 .product-detail__button--card:active, .product-detail__button--buy:active {
     background-color: var(--palette-royal-blue);
     border-color: var(--palette-royal-blue);
+    color: #fff;
 }
 
 .product-detail__button:disabled {
