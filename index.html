@@ -22,10 +22,10 @@
     <div class="header-top">
       <nav aria-label="Main" class="header-nav nav">
         <a href="#content" class="skip-link visually-hidden">Skip to content</a>
-        <button class="header__burger-button" type="button">
+        <button class="header__burger-button" id="burger_menu_button" type="button">
           <span class="header__burger-picture"></span>
         </button>
-        <div class="burger-menu">
+        <div class="burger-menu" id="burger_menu" hidden>
           <ul class="burger-menu__list" role="list">
             <li class="burger-menu__item">
               <a href="javascript:void(0)" class="burger-menu__link">Women</a>
@@ -117,11 +117,11 @@
         <h1 class="section__heading product-detail__heading heading heading--xl" id="main_heading">White unisex t-shirt</h1>
         <p class="product-detail__description product-detail__description--size">CHF 40</p>
         <p class="product-detail__description product-detail__description--tax">Tax included</p>
-        <form action="javascript:void(0)" class="product-detail__form form" method="post">
+        <form action="javascript:void(0)" id="product_characteristics_form" class="product-detail__form form" method="post">
           <fieldset class="product-detail__form-group product-options product-options--size">
             <legend class="visually-hidden">Choose Size of <span class="visually-hidden" aria-labelledby="main_heading"></span></legend>
-            <p class="product-options__name" aria-hidden="true">Size - XS</p>
-            <ul class="product-options__list" role="list">
+            <p class="product-options__name" aria-hidden="true">Size - <span id="product_heading_size">XS</span></p>
+            <ul class="product-options__list product-options__list--js" role="list">
               <li class="product-options__list-item">
                 <input type="radio" class="product-options__list-radio" id="size_1" name="product_size" value="XS" checked>
                 <label for="size_1" class="product-options__list-label product-options__list-label--size" title="XS size">XS</label>
@@ -150,8 +150,8 @@
           </fieldset>
           <fieldset class="product-detail__form-group product-options product-options--color">
             <legend class="visually-hidden">Choose Color of <span class="visually-hidden" aria-labelledby="main_heading"></span></legend>
-            <p class="product-options__name" aria-hidden="true">Color - White</p>
-            <ul class="product-options__list" role="list">
+            <p class="product-options__name" aria-hidden="true">Color - <span id="product_heading_color">White</span></p>
+            <ul class="product-options__list product-options__list--js" role="list">
               <li class="product-options__list-item">
                 <input type="radio" class="product-options__list-radio" id="color_1" name="product_color" value="White" checked>
                 <label for="color_1" class="product-options__list-label product-options__list-label--color" title="Color White">
@@ -201,7 +201,16 @@
             <div class="product-options__quantity quantity">
               <label for="product_quantity" class="visually-hidden quantity__label">Quantity</label>
               <div class="quantity__control">
-                <input type="number" id="product_quantity" class="quantity__input" inputmode="numeric" pattern="[0-9]*" min="1" max="999" value="1">
+                <input
+                    type="number"
+                    id="product_quantity"
+                    class="quantity__input"
+                    inputmode="numeric"
+                    pattern="[0-9]*"
+                    min="1"
+                    max="999"
+                    value="1"
+                >
                 <button class="quantity__button quantity__button--decrease" type="button">
                   <span class="visually-hidden">Deduct 1</span>
                   <span aria-hidden="true">-</span>
@@ -215,7 +224,7 @@
           </fieldset>
           <div class="product-detail__buttons-container">
             <button class="product-detail__button product-detail__button--card" type="button">Add to cart<span class="visually-hidden" aria-labelledby="main_heading"></span></button>
-            <button class="product-detail__button product-detail__button--buy" type="submit">Buy it now<span class="visually-hidden" aria-labelledby="main_heading"></span></button>
+            <button class="product-detail__button product-detail__button--buy" id="button_buy_product" type="submit">Buy it now<span class="visually-hidden" aria-labelledby="main_heading"></span></button>
           </div>
         </form>
         <p class="product-detail__description product-detail__description--detail">A unisex basic garment with a loose fit. Light and comfortable to your skin.</p>
