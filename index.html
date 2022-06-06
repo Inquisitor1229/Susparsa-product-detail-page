@@ -22,8 +22,14 @@
     <div class="header-top">
       <nav aria-label="Main" class="header-nav nav">
         <a href="#content" class="skip-link visually-hidden">Skip to content</a>
-        <button class="header__burger-button" id="burger_menu_button" type="button">
+        <button
+            class="header__burger-button"
+            id="burger_menu_button"
+            type="button"
+            aria-labelledby="burger_menu_title"
+        >
           <span class="header__burger-picture"></span>
+          <span class="visually-hidden" id="burger_menu_title">Open/Close navigation</span>
         </button>
         <div class="burger-menu" id="burger_menu" hidden>
           <ul class="burger-menu__list" role="list">
@@ -119,76 +125,76 @@
         <p class="product-detail__description product-detail__description--tax">Tax included</p>
         <form action="javascript:void(0)" id="product_characteristics_form" class="product-detail__form form" method="post">
           <fieldset class="product-detail__form-group product-options product-options--size">
-            <legend class="visually-hidden">Choose Size of <span class="visually-hidden" aria-labelledby="main_heading"></span></legend>
+            <legend class="visually-hidden">Choose Size of <span class="visually-hidden">White unisex t-shirt</span></legend>
             <p class="product-options__name" aria-hidden="true">Size - <span id="product_heading_size">XS</span></p>
             <ul class="product-options__list product-options__list--js" role="list">
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="size_1" name="product_size" value="XS" checked>
+                <input type="radio" class="product-options__list-radio visually-hidden" id="size_1" name="product_size" value="XS" checked>
                 <label for="size_1" class="product-options__list-label product-options__list-label--size" title="XS size">XS</label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="size_2" name="product_size" value="S">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="size_2" name="product_size" value="S">
                 <label for="size_2" class="product-options__list-label product-options__list-label--size" title="S size">S</label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="size_3" name="product_size" value="M">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="size_3" name="product_size" value="M">
                 <label for="size_3" class="product-options__list-label product-options__list-label--size" title="M size">M</label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="size_4" name="product_size" value="L">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="size_4" name="product_size" value="L">
                 <label for="size_4" class="product-options__list-label product-options__list-label--size" title="L size">L</label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="size_5" name="product_size" value="XL">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="size_5" name="product_size" value="XL">
                 <label for="size_5" class="product-options__list-label product-options__list-label--size" title="XL size">XL</label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="size_6" name="product_size" value="2XL" disabled>
+                <input type="radio" class="product-options__list-radio visually-hidden" id="size_6" name="product_size" value="2XL" disabled>
                 <label for="size_6" class="product-options__list-label product-options__list-label--size" title="2XL size">2XL</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="product-detail__form-group product-options product-options--color">
-            <legend class="visually-hidden">Choose Color of <span class="visually-hidden" aria-labelledby="main_heading"></span></legend>
+            <legend class="visually-hidden">Choose Color of <span class="visually-hidden">White unisex t-shirt</span></legend>
             <p class="product-options__name" aria-hidden="true">Color - <span id="product_heading_color">White</span></p>
             <ul class="product-options__list product-options__list--js" role="list">
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="color_1" name="product_color" value="White" checked>
+                <input type="radio" class="product-options__list-radio visually-hidden" id="color_1" name="product_color" value="White" checked>
                 <label for="color_1" class="product-options__list-label product-options__list-label--color" title="Color White">
                   <span class="radio-color" style="background-color: #fff; border: 1px solid #ccc"></span>
                   <span class="visually-hidden">White</span>
                 </label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="color_2" name="product_color" value="Mirage">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="color_2" name="product_color" value="Mirage">
                 <label for="color_2" class="product-options__list-label product-options__list-label--color" title="Color Mirage">
                   <span class="radio-color" style="background-color: #1A1F29"></span>
                   <span class="visually-hidden">Mirage</span>
                 </label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="color_3" name="product_color" value="Bombay">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="color_3" name="product_color" value="Bombay">
                 <label for="color_3" class="product-options__list-label product-options__list-label--color" title="Color Bombay">
                   <span class="radio-color" style="background-color: #AEAEB0"></span>
                   <span class="visually-hidden">Bombay</span>
                 </label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="color_4" name="product_color" value="Dull Lavender">
+                <input type="radio" class="product-options__list-radio visually-hidden" id="color_4" name="product_color" value="Dull Lavender">
                 <label for="color_4" class="product-options__list-label product-options__list-label--color" title="Color Dull Lavender">
                   <span class="radio-color" style="background-color: #BA9BE6"></span>
                   <span class="visually-hidden">Dull Lavender</span>
                 </label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="color_5" name="product_color" value="Sea Pink" disabled>
+                <input type="radio" class="product-options__list-radio visually-hidden" id="color_5" name="product_color" value="Sea Pink" disabled>
                 <label for="color_5" class="product-options__list-label product-options__list-label--color" title="Color Sea Pink">
                   <span class="radio-color" style="background-color: #E9A0A7"></span>
                   <span class="visually-hidden">Sea Pink</span>
                 </label>
               </li>
               <li class="product-options__list-item">
-                <input type="radio" class="product-options__list-radio" id="color_6" name="product_color" value="Apricot Peach" disabled>
+                <input type="radio" class="product-options__list-radio visually-hidden" id="color_6" name="product_color" value="Apricot Peach" disabled>
                 <label for="color_6" class="product-options__list-label product-options__list-label--color" title="Apricot Peach">
                   <span class="radio-color" style="background-color: #F8CAB1"></span>
                   <span class="visually-hidden">Apricot Peach</span>
@@ -197,7 +203,7 @@
             </ul>
           </fieldset>
           <fieldset class="product-detail__form-group product-options product-options--quantity">
-            <legend class="product-options__name"><span class="visually-hidden" aria-labelledby="main_heading"></span>Quantity</legend>
+            <legend class="product-options__name">Quantity <span class="visually-hidden">of White unisex t-shirt</span></legend>
             <div class="product-options__quantity quantity">
               <label for="product_quantity" class="visually-hidden quantity__label">Quantity</label>
               <div class="quantity__control">
@@ -223,8 +229,8 @@
             </div>
           </fieldset>
           <div class="product-detail__buttons-container">
-            <button class="product-detail__button product-detail__button--card" type="button">Add to cart<span class="visually-hidden" aria-labelledby="main_heading"></span></button>
-            <button class="product-detail__button product-detail__button--buy" id="button_buy_product" type="submit">Buy it now<span class="visually-hidden" aria-labelledby="main_heading"></span></button>
+            <button class="product-detail__button product-detail__button--card" type="button">Add to cart<span class="visually-hidden">White unisex t-shirt</span></button>
+            <button class="product-detail__button product-detail__button--buy" id="button_buy_product" type="submit">Buy it now<span class="visually-hidden">White unisex t-shirt</span></button>
           </div>
         </form>
         <p class="product-detail__description product-detail__description--detail">A unisex basic garment with a loose fit. Light and comfortable to your skin.</p>
@@ -235,7 +241,8 @@
       </div>
     </div>
 
-    <div class="container accordion-container">
+    <section class="container accordion-container">
+      <h2 class="visually-hidden">Product features</h2>
       <div id="accordionGroup" class="accordion">
         <h3 class="accordion__heading-container">
           <button type="button" aria-expanded="true" class="accordion__trigger accordion__trigger--first" aria-controls="sect1" id="accordion1id">
@@ -277,7 +284,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </section>
 
   <section class="products section" aria-labelledby="products_heading">
